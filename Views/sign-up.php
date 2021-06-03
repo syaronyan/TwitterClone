@@ -1,13 +1,13 @@
+<?php
+// 設定関連を読み込む
+include_once('../config.php');
+// 便利な関数を読み込む
+include_once('../util.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo-twitterblue.svg">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-
+    <?php include_once('common/head.php'); ?>
     <title>会員登録画面 / Twitterクローン</title>
     <meta name="description" content="会員登録画面です">
 </head>
@@ -25,5 +25,6 @@
             <p class="mt-2 mb-3 text-muted">&copy; 2021</p>
         </form>
     </main>
+    <?php include_once('common/foot.php'); ?>
 </body>
 </html>
