@@ -20,9 +20,9 @@
                 <?php
                 if (isset($view_tweet['like_id'])){
                 // いいねしている場合
-                    echo '<img src="img/icon-heart-twitterblue.svg" alt="">';
+                    echo '<img src="'.HOME_URL.'Views/img/icon-heart-twitterblue.svg" alt="">';
                 } else {
-                    echo '<img src="img/icon-heart.svg" alt="">';
+                    echo '<img src="'.HOME_URL.'Views/img/icon-heart.svg" alt="">';
                 }
                 ?>
             </div>

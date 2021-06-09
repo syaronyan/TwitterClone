@@ -18,7 +18,7 @@ $(function(){
             this_obj.data('like-id', null);
 
             // いいね！ボタンの色をグレーに変更
-            $(this).find('img').attr('src', 'img/icon-heart.svg');
+            $(this).find('img').attr('src', '../Views/img/icon-heart.svg');
         } else {
             // いいね！付与
             // いいね！カウントを増やす
@@ -27,7 +27,7 @@ $(function(){
             this_obj.data('like-id', true);
 
             // いいね！ボタンの色をブルーに変更
-            $(this).find('img').attr('src', 'img/icon-heart-twitterblue.svg');
+            $(this).find('img').attr('src', '../Views/img/icon-heart-twitterblue.svg');
         }
     })
 })

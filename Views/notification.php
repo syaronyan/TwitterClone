@@ -26,13 +26,13 @@ include_once('../util.php');
                 <?php else:?>
                     <div class="notification-item">
                         <div class="user">
-                            <img src="img_uploaded/user/sample-person.jpg" alt="">
+                            <img src="<?php echo HOME_URL;?>Views/img_uploaded/user/sample-person.jpg" alt="">
                         </div>
                         <div class="comment"><p>いいね！されました。</p></div>
                     </div>
                     <div class="notification-item">
                         <div class="user">
-                            <img src="img_uploaded/user/sample-person.jpg" alt="">
+                            <img src="<?php echo HOME_URL;?>Views/img_uploaded/user/sample-person.jpg" alt="">
                         </div>
                         <div class="comment"><p>フォローされました。</p></div>
                     </div>
