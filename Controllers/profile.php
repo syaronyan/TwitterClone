@@ -52,7 +52,7 @@ if (isset($_POST['nickname']) && isset($_POST['name']) && isset($_POST['email'])
 // 表示するユーザーIDを取得
 $requested_user_id = $user['id'];
 if (isset($_GET['user_id'])) {
-    $requested_user_id = $_GET['user_id'];
+    $requested_user_id = (int)$_GET['user_id'];
 }
 
 
@@ -60,6 +60,13 @@ if (isset($_GET['user_id'])) {
 $view_user = $user;
 // プロフィール詳細
 $view_requested_user = findUser($requested_user_id, $user['id']);
+
+// ユーザーが見つからない場合
+if (!$view_requested_user) {
+    header('HTTP/1.0 404 Not Found');
+    exit;
+}
+
 // ツイート一覧
 $view_tweets = findTweets($user, null, [$requested_user_id]);
 

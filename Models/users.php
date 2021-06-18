@@ -146,7 +146,7 @@ function findUserAndCheckPassword(string $email, string $password){
  * @param integer $login_user_id
  * @return array|false
  */
-function findUser(int $user_id, int $login_user_id = null) {
+function findUser(int $user_id = null, int $login_user_id = null, string $email = null, string $name = null) {
     $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     // 接続チェック
     if ($mysqli->connect_errno){
